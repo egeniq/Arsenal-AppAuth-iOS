@@ -8,6 +8,8 @@
 [![Pod Platform](https://img.shields.io/cocoapods/p/AppAuth.svg?style=flat)](https://cocoapods.org/pods/AppAuth)
 [![Catalyst compatible](https://img.shields.io/badge/Catalyst-compatible-brightgreen.svg?style=flat)](https://developer.apple.com/documentation/xcode/creating_a_mac_version_of_your_ipad_app)
 
+--- Fork for FC Arsenal Project ---
+
 AppAuth for iOS and macOS, and tvOS is a client SDK for communicating with 
 [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and 
 [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) providers. 
