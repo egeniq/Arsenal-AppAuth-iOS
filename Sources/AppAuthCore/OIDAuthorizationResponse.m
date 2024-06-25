@@ -203,6 +203,10 @@ static NSString *const kTokenExchangeRequestException =
     [NSException raise:kTokenExchangeRequestException
                 format:kTokenExchangeRequestException];
   }
+  
+  NSMutableDictionary * parameters = [NSMutableDictionary dictionaryWithDictionary: additionalParameters];
+  parameters[@"token_version"] = @"v2";
+  
   return [[OIDTokenRequest alloc] initWithConfiguration:_request.configuration
                                               grantType:OIDGrantTypeAuthorizationCode
                                       authorizationCode:_authorizationCode
@@ -212,7 +216,7 @@ static NSString *const kTokenExchangeRequestException =
                                                   scope:nil
                                            refreshToken:nil
                                            codeVerifier:_request.codeVerifier
-                                   additionalParameters:additionalParameters
+                                   additionalParameters:parameters
                                       additionalHeaders:additionalHeaders];
 }
 
