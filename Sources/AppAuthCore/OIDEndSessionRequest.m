@@ -169,9 +169,9 @@ static NSString *const OIDMissingEndSessionEndpointMessage =
   [query addParameters:_additionalParameters];
 
   // Add optional parameters, as applicable.
-  if (_idTokenHint) {
-    [query addParameter:kIdTokenHintKey value:_idTokenHint];
-  }
+//  if (_idTokenHint) {
+//    [query addParameter:kIdTokenHintKey value:_idTokenHint];
+//  }
 
   if (_postLogoutRedirectURL) {
     [query addParameter:kPostLogoutRedirectURLKey value:_postLogoutRedirectURL.absoluteString];
